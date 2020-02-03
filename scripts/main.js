@@ -47,10 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.getElementById('menu');
   const form = document.getElementById('form');
 
-  console.log(localAnchors);
-
-
-
   form.addEventListener('focusout', (event) => {
     const el = event.target;
     el.value = el.value.trim();
