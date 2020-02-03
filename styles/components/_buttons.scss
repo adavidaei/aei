@@ -1,0 +1,29 @@
+.button {
+  @extend .typography-button;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: transparent;
+  text-decoration: none !important;
+  padding: 0.8em 2em;
+
+  &-outlined {
+    border: 2px solid #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #363636;
+    }
+  }
+
+  &-filled {
+    background-color: #AC0101;
+    color: #fff !important;
+
+    &:hover {
+      background-color: darken($color: #AC0101, $amount: 10%);
+    }
+  }
+
+
+}

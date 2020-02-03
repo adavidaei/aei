@@ -1,0 +1,30 @@
+.form-field {
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 1rem;
+    transition: .3s ease-in-out;
+
+  }
+
+  input {
+    margin: 0 !important;
+    background-color: blue;
+
+    &:invalid + label {
+      transform: translateY(-50%);
+    }
+
+    // transform: translateY(-150%), scale(-20%);
+
+    // &:not([value=""]) + label {
+    // }
+
+    &:focus + label {
+      color: #AC0101 !important;
+    }
+  }
+}

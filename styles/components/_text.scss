@@ -1,0 +1,130 @@
+:root {
+  font-size: 14px;
+
+  @include from(m) {
+    font-size: 14.5px;
+  }
+
+  @include from(lg) {
+    font-size: 15px;
+  }
+
+  @include from(lg) {
+    font-size: 16px;
+  }
+}
+
+body {
+  @extend .typography-body-1;
+  color: #363636;
+}
+
+body,
+.typography-h1, h1,
+.typography-h2, h2,
+.typography-h3, h3,
+.typography-h4, h4,
+.typography-h5, h5,
+.typography-h6, h6,
+.typography-subtitle-1,
+.typography-subtitle-2,
+.typography-body-1,
+.typography-body-2,
+.typography-button {
+  line-height: 1.1em !important;
+  font-family: 'Dosis', sans-serif !important;
+}
+
+.typography-h1, h1,
+.typography-h2, h2,
+.typography-h3, h3,
+.typography-h4, h4,
+.typography-h5, h5,
+.typography-h6, h6 {
+  display: block;
+}
+
+.font-weight-light {
+  font-weight: 400 !important;
+}
+
+.font-weight-regular {
+  font-weight: 500;
+}
+
+.font-weight-semi-bold {
+  font-weight: 600 !important;
+}
+
+.typography-h1, h1 {
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: -0.09375rem;
+  margin: 2.8rem 0 1.68rem 0;
+}
+
+.typography-h2, h2 {
+  font-size: 3.56rem;
+  font-weight: 400;
+  letter-spacing: -0.03125rem;
+  margin: 2.3733333333rem 0 1.424rem 0;
+}
+
+.typography-h3, h3 {
+  font-size: 2.92rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 1.9466666667rem 0 1.168rem 0;
+}
+
+.typography-h4, h4 {
+  font-size: 2.28rem;
+  font-weight: 400;
+  letter-spacing: 0.03125rem;
+  margin: 1.52rem 0 .912rem 0;
+}
+
+.typography-h5, h5 {
+  font-size: 1.64rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin: 1.0933333333rem 0 .656rem 0;
+}
+
+.typography-h6, h6 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.03125rem;
+  margin: .7666666667rem 0 .46rem 0;
+}
+
+.typography-subtitle-1 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.03125rem;
+}
+
+.typography-subtitle-2 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.03125rem;
+}
+
+.typography-body-1 {
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.03125rem !important;
+}
+
+.typography-body-2 {
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.03125rem !important;
+}
+
+.typography-button {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.03125rem;
+  text-transform: uppercase;
+}

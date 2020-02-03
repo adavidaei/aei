@@ -1,0 +1,40 @@
+@import "./util/_helpers";
+@import "./ed-grid/ed-grid.scss";
+@import "./components/swiper";
+@import "./components/input";
+@import "./components/text";
+@import "./components/buttons";
+@import "./components/header";
+@import "./components/color";
+@import "./components/footer";
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  padding-top: 5rem;
+}
+
+.s-main-justify {
+  justify-content: space-between;
+}
+
+.ed-container.full {
+  min-width: 100%;
+}
+
+.card {
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+footer {
+  @extend .bg-darkblue;
+  color: #fff;
+  padding-top: 4rem;
+}
